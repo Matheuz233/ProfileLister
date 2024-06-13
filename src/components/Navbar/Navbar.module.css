@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.2em;
+  margin-bottom: 2em;
+  background-color: #0d1a33;
+  color: #dbd7d8;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  width: 40px;
+}
+
+.logo h1 {
+  margin-left: 0.5em;
+}
+
+.routes {
+  display: flex;
+  list-style: none;
+}
+
+.routes li {
+  margin-right: 1.3em;
+}
+
+.routes li a {
+  color: #dbd7d8;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+}
+
+.routes a:hover {
+  border-color: #dbd7d8;
+}
