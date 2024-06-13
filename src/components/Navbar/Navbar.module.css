@@ -10,35 +10,58 @@
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
-.logo img{
+.logo img {
   width: 40px;
 }
 
 .logo h1 {
   margin-left: 0.5em;
+  font-size: 1.2em;
+  color: #dbd7d8;
 }
 
-.routes {
+.links_list {
   display: flex;
   list-style: none;
 }
 
-.routes li {
+.links_list li {
   margin-right: 1.3em;
 }
 
-.routes li a {
+.links_list li a {
   color: #dbd7d8;
   text-decoration: none;
+  font-weight: bold;
   padding: 5px;
-  transition: 0.4s;
+  transition: border-color 0.4s;
   border-bottom: 2px solid transparent;
 }
 
-.routes a:hover {
+.links_list li a:hover {
   border-color: #dbd7d8;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .logo img {
+    margin-bottom: 0.5em;
+  }
+
+  .links_list li {
+    margin: 1em;
+  }
 }
