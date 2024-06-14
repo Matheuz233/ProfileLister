@@ -36,7 +36,6 @@
 .links_list li a {
   color: #dbd7d8;
   text-decoration: none;
-  font-weight: bold;
   padding: 5px;
   transition: border-color 0.4s;
   border-bottom: 2px solid transparent;
@@ -46,6 +45,7 @@
   border-color: #dbd7d8;
 }
 
+/* Design Responsivo */
 @media screen and (max-width: 767px) {
   .navbar {
     flex-direction: column;
