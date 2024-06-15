@@ -36,27 +36,27 @@ const Filter = ({ onApplyFilters }) => {
     <div>
       <input
         type="text"
-        name="name"
-        placeholder="Filter by name"
+        name="nome"
+        placeholder="Filtrar por Nome"
         value={filters.name}
         onChange={handleFilterChange}
       />
       <input
         type="text"
         name="email"
-        placeholder="Filter by email"
+        placeholder="Filtrar por Email"
         value={filters.email}
         onChange={handleFilterChange}
       />
       <input
         type="text"
-        name="lastName"
-        placeholder="Filter by last name"
+        name="sobrenome"
+        placeholder="Filtrar por Sobrenome"
         value={filters.lastName}
         onChange={handleFilterChange}
       />
-      <button onClick={handleApplyFilters}>Apply Filters</button>
-      <button onClick={clearFilters}>Clear Filters</button>
+      <button onClick={handleApplyFilters}>Aplicar Filtros</button>
+      <button onClick={clearFilters}>Limpar Filtros</button>
     </div>
   );
 };
