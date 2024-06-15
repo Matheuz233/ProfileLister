@@ -5,7 +5,7 @@ Este repositório documenta todas as etapas da criação de um teste para a sele
 
 ## Funcionalidades 🛠️
 
-* [ ]   Realizar Autentificação
+* [X]   ~Realizar Autentificação~
 * [ ]   Realizar Tratamentos de Erros
 * [ ]   Listar Usuários Cadastrados na Aplicação
 * [ ]   Realizar a Filtragem da Lista de Clientes (Nome, Email e Sobrenome)
