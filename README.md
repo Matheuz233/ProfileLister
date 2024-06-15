@@ -7,8 +7,8 @@ Este repositório documenta todas as etapas da criação de um teste para a sele
 
 * [X]   ~Realizar Autentificação~
 * [ ]   Realizar Tratamentos de Erros
-* [ ]   Listar Usuários Cadastrados na Aplicação
-* [ ]   Realizar a Filtragem da Lista de Clientes (Nome, Email e Sobrenome)
+* [X]   ~Listar Usuários Cadastrados na Aplicação~
+* [X]   ~Realizar a Filtragem da Lista de Clientes (Nome, Email e Sobrenome)~
 
 ## Documentação de Cores 🎨
 
