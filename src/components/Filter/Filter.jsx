@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import styles from "./Filter.module.css"
+
 const Filter = ({ onApplyFilters }) => {
   const [filters, setFilters] = useState({
     name: "",
@@ -33,15 +35,17 @@ const Filter = ({ onApplyFilters }) => {
   };
 
   return (
-    <div>
+    <div className={styles.filter}>
       <input
+        className={styles.input}
         type="text"
-        name="nome"
+        name="name"
         placeholder="Filtrar por Nome"
         value={filters.name}
         onChange={handleFilterChange}
       />
       <input
+        className={styles.input}
         type="text"
         name="email"
         placeholder="Filtrar por Email"
@@ -49,14 +53,18 @@ const Filter = ({ onApplyFilters }) => {
         onChange={handleFilterChange}
       />
       <input
+        className={styles.input}
         type="text"
-        name="sobrenome"
+        name="lastName"
         placeholder="Filtrar por Sobrenome"
         value={filters.lastName}
         onChange={handleFilterChange}
       />
-      <button onClick={handleApplyFilters}>Aplicar Filtros</button>
-      <button onClick={clearFilters}>Limpar Filtros</button>
+
+      <div className={styles.buttons}>
+      <button className={styles.button} onClick={handleApplyFilters}>Aplicar Filtros</button>
+      <button className={styles.button} onClick={clearFilters}>Limpar Filtros</button>
+      </div>
     </div>
   );
 };
