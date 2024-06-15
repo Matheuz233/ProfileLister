@@ -4,6 +4,8 @@ import UserCard from "../../components/UserCard/UserCard";
 import { getUsersPage } from "../../api/axios";
 import Filter from "../../components/Filter/Filter";
 
+import styles from "./Home.module.css";
+
 const Home = () => {
   const [page, setPage] = useState(1);
   const [appliedFilters, setAppliedFilters] = useState({
@@ -59,7 +61,7 @@ const Home = () => {
     <div>
       <Filter onApplyFilters={handleApplyFilters} />
 
-      <nav className="nav-ex2">
+      <nav className={styles.navigator}>
         <button onClick={firstPage} disabled={isPreviousData || page === 1}>
           &lt;&lt;
         </button>
@@ -84,9 +86,11 @@ const Home = () => {
 
       {isFetching && <span className="loading">Loading...</span>}
 
-      {filteredUsers.map((user) => (
-        <UserCard key={user.id} user={user} />
-      ))}
+      <div className={styles.cards}>
+        {filteredUsers.map((user) => (
+          <UserCard key={user.id} user={user} />
+        ))}
+      </div>
     </div>
   );
 };
