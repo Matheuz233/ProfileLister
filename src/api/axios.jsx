@@ -5,6 +5,10 @@ const userProfiles = axios.create({
 });
 
 export const getUsersPage = async (pageParam = 1) => {
-  const response = await userProfiles.get(`/users?page=${pageParam}`);
-  return response.data;
+  try {
+    const response = await userProfiles.get(`/users?page=${pageParam}`);
+    return response.data;
+  } catch (error) {
+    throw new Error(`Ocorreu um erro na requisição: ${error.message}`);
+  }
 };
