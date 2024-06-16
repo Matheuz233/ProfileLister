@@ -1,100 +1,102 @@
+/* Base Styles */
 .login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
 }
 
 .img {
-    max-width: 500px;
-    width: 100%;
-    max-height: 500px;
-    min-height: auto;
-    padding-right: 5em;
-    margin-right: 10em;
-    border-right: #0D1A33 2px solid;
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  min-height: auto;
+  padding-right: 5em;
+  margin-right: 5em;
+  border-right: 2px solid #0d1a33;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 2em;
 }
 
 .form h2 {
-    color: #0D1A33;
-    text-align: center;
-    margin-bottom: 1em;
+  color: #0d1a33;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .error {
-    color: red;
-    margin-bottom: 1em;
-    text-align: center;
-  }
+  color: red;
+  margin-bottom: 1em;
+  text-align: center;
+}
 
 .form input {
-    height: 45px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    background-color: #ecf0f1
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #ecf0f1;
 }
 
-.label_input {
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    margin: 8px;
+.labelInput {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 8px;
 }
 
-.icon {
-    padding: 0 10px;
-    color: #0D1A33;
+.icon,
+.showPasswordBtn {
+  padding: 0 10px;
+  color: #0d1a33;
 }
 
-.icon-modify {
-    color: #0D1A33;
-    padding: 0 10px;
+.showPasswordBtn {
+  border: none;
 }
 
 .btn {
-    background-color: #0D1A33;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 10em;
-    margin-left: 8px;
+  background-color: #0d1a33;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 10em;
+  margin-left: 8px;
 }
 
 /* Design Responsivo */
-@media screen and (max-width: 1040px) {
-    .img {
-        width: 400px;
-        padding: 0;
-        margin-right: 3em;
-    }
+@media screen and (max-width: 1250px) {
+  .img {
+    width: 400px;
+    padding: 0;
+    margin: 2em;
+  }
 
-    .form {
-        width: 90%;
-    }
+  .form {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 767px) {
-    .img {
-        display: none;
-    }
+@media screen and (max-width: 877px) {
+  .img {
+    display: none;
+  }
 
-    .form {
-        width: 70%;
-    }
+  .form {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .form {
-        width: 90%;
-    }
+  .form {
+    width: 90%;
+  }
 }
