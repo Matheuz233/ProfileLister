@@ -45,14 +45,12 @@
   border-color: #dbd7d8;
 }
 
+.logout_icon {
+  margin-left: 10px;
+}
+
 /* Design Responsivo */
 @media screen and (max-width: 767px) {
-  .navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .logo h1 {
     display: none;
   }
