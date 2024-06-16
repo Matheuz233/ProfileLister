@@ -1,0 +1,36 @@
+.not_found_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.not_found_page h1 {
+  color: #0d1a33;
+  font-size: 2em;
+}
+
+.not_found_page p {
+  text-align: center;
+}
+
+.not_found_page img {
+  width: 600px;
+}
+
+/* Design Responsivo */
+@media screen and (max-width: 1250px) {
+  .not_found_page h1 {
+    color: #0d1a33;
+    font-size: 1.5em;
+  }
+
+  .not_found_page img {
+    width: 400px;
+  }
+
+  .not_found_page p {
+    margin: 1em;
+  }
+}
