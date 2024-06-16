@@ -13,6 +13,10 @@
 }
 
 .user_card img {
-  width: 100px;
+  background-color: transparent;
   border-radius: 50%;
+  width: 100px;
+  padding: 3px;
+  border: 2px #dbd7d8 solid;
+  margin-bottom: 10px;
 }

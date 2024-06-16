@@ -1,4 +1,4 @@
-import styles from "./UserCard.module.css"
+import styles from "./UserCard.module.css";
 
 const UserCard = ({ user }) => {
   return (
