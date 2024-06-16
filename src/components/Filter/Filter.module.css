@@ -27,7 +27,8 @@
   line-height: 1.5;
   border: none;
   color: rgb(14, 14, 16);
-  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in,
+    background-color 100ms ease-in;
 }
 
 .input:hover {
@@ -63,6 +64,10 @@
   .filter {
     flex-direction: column;
     margin: 20px;
+  }
+
+  .search_txt {
+    display: none;
   }
 
   .input {
