@@ -1,7 +1,8 @@
 import { useQuery } from "react-query";
 import { useState } from "react";
-import UserCard from "../../components/UserCard/UserCard";
 import { getUsersPage } from "../../api/axios";
+
+import UserCard from "../../components/UserCard/UserCard";
 import Filter from "../../components/Filter/Filter";
 
 import styles from "./Home.module.css";
@@ -45,20 +46,26 @@ const Home = () => {
       return nameMatch && emailMatch && lastNameMatch;
     }) || [];
 
-  if (usersLoading) return <p>Loading Users...</p>;
-  if (usersError) return <p>Error: {usersErrorMessage.message}</p>;
-
   return (
     <div>
       <Filter onApplyFilters={handleApplyFilters} />
+      {usersError && (
+        <div className={styles.error_container}>
+          <h1 className={styles.errorMessage}>{usersErrorMessage.message}</h1>
+        </div>
+      )}
 
-      {isUsersFetching && <span className="loading">Loading...</span>}
-
-      <div className={styles.cards}>
-        {filteredUsers.map((user) => (
-          <UserCard key={user.id} user={user} />
-        ))}
-      </div>
+      {usersLoading && isUsersFetching ? (
+        <div className={styles.spinner_container}>
+          <img src="./spinner.gif" alt="Loading" className={styles.spinner} />
+        </div>
+      ) : (
+        <div className={styles.cards}>
+          {filteredUsers.map((user) => (
+            <UserCard key={user.id} user={user} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
