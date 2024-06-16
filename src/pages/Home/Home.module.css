@@ -1,36 +1,3 @@
-.navigator {
-  display: flex;
-  justify-content: center;
-}
-
-.navigator button {
-  padding: 8px 12px;
-  margin: 0 4px;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  color: #333;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-}
-
-.navigator button:hover {
-  background-color: #e0e0e0;
-}
-
-.navigator button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.navigator button:first-child {
-  margin-left: 0;
-}
-
-.navigator button:last-child {
-  margin-right: 0;
-}
-
 .cards {
   padding: 30px;
   display: grid;

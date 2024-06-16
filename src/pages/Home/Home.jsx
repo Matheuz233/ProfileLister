@@ -7,7 +7,6 @@ import Filter from "../../components/Filter/Filter";
 import styles from "./Home.module.css";
 
 const Home = () => {
-  const [page, setPage] = useState(1);
   const [appliedFilters, setAppliedFilters] = useState({
     name: "",
     email: "",
@@ -15,76 +14,45 @@ const Home = () => {
   });
 
   const {
-    isLoading,
-    isError: queryError,
-    error,
-    data: users,
-    isFetching,
-    isPreviousData,
-  } = useQuery(["users", page], () => getUsersPage(page), {
-    keepPreviousData: true,
-  });
-
-  if (isLoading) return <p>Loading Users...</p>;
-
-  if (queryError) return <p>Error: {error.message}</p>;
-
-  // Aplicar filtros aos usuários
-  const filteredUsers = users.data.filter((user) => {
-    const nameMatch = user.first_name
-      .toLowerCase()
-      .includes(appliedFilters.name.toLowerCase());
-    const emailMatch = user.email
-      .toLowerCase()
-      .includes(appliedFilters.email.toLowerCase());
-    const lastNameMatch = user.last_name
-      .toLowerCase()
-      .includes(appliedFilters.lastName.toLowerCase());
-
-    return nameMatch && emailMatch && lastNameMatch;
+    isLoading: usersLoading,
+    isError: usersError,
+    error: usersErrorMessage,
+    data: combinedUsersData,
+    isFetching: isUsersFetching,
+  } = useQuery(["combinedUsers", 1], async () => {
+    const page1 = await getUsersPage(1);
+    const page2 = await getUsersPage(2);
+    const combinedUsers = [...page1.data, ...page2.data];
+    return combinedUsers;
   });
 
   const handleApplyFilters = (filters) => {
     setAppliedFilters(filters);
-    setPage(1);
   };
 
-  const firstPage = () => setPage(1);
-  const lastPage = () => setPage(users.total_pages);
+  const filteredUsers =
+    combinedUsersData?.filter((user) => {
+      const nameMatch = user.first_name
+        .toLowerCase()
+        .includes(appliedFilters.name.toLowerCase());
+      const emailMatch = user.email
+        .toLowerCase()
+        .includes(appliedFilters.email.toLowerCase());
+      const lastNameMatch = user.last_name
+        .toLowerCase()
+        .includes(appliedFilters.lastName.toLowerCase());
 
-  const pagesArray = Array.from(
-    { length: users.total_pages },
-    (_, index) => index + 1
-  );
+      return nameMatch && emailMatch && lastNameMatch;
+    }) || [];
+
+  if (usersLoading) return <p>Loading Users...</p>;
+  if (usersError) return <p>Error: {usersErrorMessage.message}</p>;
 
   return (
     <div>
       <Filter onApplyFilters={handleApplyFilters} />
 
-      <nav className={styles.navigator}>
-        <button onClick={firstPage} disabled={isPreviousData || page === 1}>
-          &lt;&lt;
-        </button>
-
-        {pagesArray.map((pg) => (
-          <button
-            key={pg}
-            onClick={() => setPage(pg)}
-            disabled={isPreviousData}
-          >
-            {pg}
-          </button>
-        ))}
-
-        <button
-          onClick={lastPage}
-          disabled={isPreviousData || page === users.total_pages}
-        >
-          &gt;&gt;
-        </button>
-      </nav>
-
-      {isFetching && <span className="loading">Loading...</span>}
+      {isUsersFetching && <span className="loading">Loading...</span>}
 
       <div className={styles.cards}>
         {filteredUsers.map((user) => (
