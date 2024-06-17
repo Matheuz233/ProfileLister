@@ -55,6 +55,12 @@ const Home = () => {
         </div>
       )}
 
+      {filteredUsers.length <= 0 && (
+        <div className={styles.noResults}>
+          <h3>Nenhum Usuário Encontrado</h3>
+        </div>
+      )}
+
       {usersLoading && isUsersFetching ? (
         <div className={styles.spinner_container}>
           <img src="./spinner.gif" alt="Loading" className={styles.spinner} />

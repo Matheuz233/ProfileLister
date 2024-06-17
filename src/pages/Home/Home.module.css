@@ -16,6 +16,13 @@
   border-radius: 5px;
 }
 
+.noResults {
+  text-align: center;
+  margin: 3em 1em;
+  font-size: 18px;
+  color: #666;
+}
+
 .spinner_container {
   display: flex;
   justify-content: center;
@@ -32,6 +39,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
 }
+
 
 @media screen and (max-width: 1000px) {
   .errorMessage {
