@@ -50,7 +50,7 @@ Senha:
 ![Imagem 2](https://github.com/Matheuz233/ProfileLister2/assets/138679799/42429994-a829-4760-9046-99b81eeda41b)
 
 ### Tela do Sobre
-![Imagem 3](https://github.com/Matheuz233/ProfileLister2/assets/138679799/ff6da4f1-243a-4568-b1c1-fe59a801bb95)
+![Imagem 3](https://github.com/Matheuz233/ProfileLister2/assets/138679799/3e0c9538-a83d-43b7-952d-e40c13f093d9)
 
 ### Tela de Página Não Encontrada
 ![Imagem 4](https://github.com/Matheuz233/ProfileLister2/assets/138679799/561ccda3-6e85-4575-b98e-58ef45174398)
@@ -66,8 +66,7 @@ Senha:
 
 
 ### Tela do Sobre
-![Imagem 3](https://github.com/Matheuz233/ProfileLister2/assets/138679799/57c6253f-817d-43e6-8350-a5536dde9b3f)
-
+![Imagem 3 ](https://github.com/Matheuz233/ProfileLister2/assets/138679799/b9d8273c-2fae-4003-9536-62cced969fee)
 
 
 ### Tela de Página Não Encontrada
