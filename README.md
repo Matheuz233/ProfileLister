@@ -25,7 +25,7 @@ Principais cores da aplicação:
 
 ## Acesso ao Projeto 🌐
 
-Para acessar o projeto, [clique aqui](https://profile-lister-axx7rdh5t.vercel.app/)!
+Para acessar o projeto, [clique aqui](https://profile-lister-8bz2bhz0b.vercel.app)!
 
 
 ## Credenciais 🔒
