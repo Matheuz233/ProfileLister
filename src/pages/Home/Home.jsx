@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       )}
 
-      {filteredUsers.length <= 0 && (
+      {filteredUsers.length <= 0 && !usersLoading && (
         <div className={styles.noResults}>
           <h3>Nenhum Usuário Encontrado</h3>
         </div>
