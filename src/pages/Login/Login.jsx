@@ -66,7 +66,7 @@ const Login = () => {
           <input
             type={showPassword ? "text" : "password"}
             id="password"
-            placeholder="Password"
+            placeholder="Senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             autoComplete="current-password"
