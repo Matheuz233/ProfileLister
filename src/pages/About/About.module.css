@@ -1,0 +1,68 @@
+.about {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.about img {
+  width: 400px;
+}
+
+.about p {
+  margin: 2em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button {
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  width: 250px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.matheus_button {
+  background-color: #dbd7d8;
+}
+
+.matheus_button:hover {
+  background-color: #bcb9ba;
+}
+
+.matheus_button img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.vokere_button {
+  background-color: #f1dc37;
+}
+
+.vokere_button:hover {
+  background-color: #d4c630;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 877px) {
+  .about img {
+    width: 350px;
+  }
+
+  .matheus_button img {
+    width: 16px;    
+  }
+}
