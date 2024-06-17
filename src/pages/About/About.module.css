@@ -29,32 +29,19 @@
   padding: 15px 40px;
   width: 250px;
   cursor: pointer;
+  background-color: #0d1a33;
+  color: white;
   transition: background-color 0.3s ease;
 }
 
-.matheus_button {
-  background-color: #dbd7d8;
+.buttons button:hover {
+  background-color: #283c66;
 }
 
-.matheus_button:hover {
-  background-color: #bcb9ba;
-}
-
-.matheus_button img {
+.buttons button img {
   width: 16px;
   margin-right: 5px;
-}
-
-.vokere_button {
-  background-color: #f1dc37;
-}
-
-.vokere_button:hover {
-  background-color: #d4c630;
-}
-
-.icon {
-  margin-right: 5px;
+  color: white;
 }
 
 @media screen and (max-width: 877px) {
@@ -63,6 +50,6 @@
   }
 
   .matheus_button img {
-    width: 16px;    
+    width: 16px;
   }
 }

@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
-
 import styles from "./About.module.css";
 
 import developer from "../../assets/developer.svg";
@@ -21,16 +18,9 @@ const About = () => {
       </p>
       <div className={styles.buttons}>
         <button
-          onClick={() => handleNavigation("https://github.com/Matheuz233")}
-          className={styles.matheus_button}>
+          onClick={() => handleNavigation("https://github.com/Matheuz233")}>
           <img src={githubIcon} alt="Icone do Github" />
           Matheuz233
-        </button>
-        <button
-          onClick={() => handleNavigation("https://euvokere.com.br/")}
-          className={styles.vokere_button}>
-          <FontAwesomeIcon className={styles.icon} icon={faBell} />
-          Vokerê
         </button>
       </div>
     </div>
