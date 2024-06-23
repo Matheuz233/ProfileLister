@@ -80,13 +80,13 @@ A instalação do projeto pode ser feita da seguinte forma:
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Matheuz233/GitHubFinder.git
+git clone https://https://github.com/Matheuz233/ProfileLister.git
 ```
 
 2. Acesse o diretório do projeto
 
 ```bash
-cd ./GitHubFinder
+cd ./ProfileLister
 ```
 
 3. Instale as dependências do projeto
