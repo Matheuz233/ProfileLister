@@ -44,33 +44,33 @@ Senha:
 ## Imagens da Aplicação (Desktop) 📸
 
 ### Tela de Login
-![Imagem 1](https://github.com/Matheuz233/ProfileLister2/assets/138679799/492c97dd-8c2c-4d88-9210-d0adf9d606c7)
+![Login](https://github.com/Matheuz233/ProfileLister2/assets/138679799/492c97dd-8c2c-4d88-9210-d0adf9d606c7)
 
 ### Tela Inicial
-![Imagem 2](https://github.com/Matheuz233/ProfileLister2/assets/138679799/42429994-a829-4760-9046-99b81eeda41b)
+![Inicio](https://github.com/Matheuz233/ProfileLister2/assets/138679799/42429994-a829-4760-9046-99b81eeda41b)
 
 ### Tela do Sobre
-![Imagem 3](https://github.com/Matheuz233/ProfileLister2/assets/138679799/3e0c9538-a83d-43b7-952d-e40c13f093d9)
+![Sobre](https://github.com/Matheuz233/ProfileLister2/assets/138679799/3e0c9538-a83d-43b7-952d-e40c13f093d9)
 
 ### Tela de Página Não Encontrada
-![Imagem 4](https://github.com/Matheuz233/ProfileLister2/assets/138679799/561ccda3-6e85-4575-b98e-58ef45174398)
+![Página 404](https://github.com/Matheuz233/ProfileLister2/assets/138679799/561ccda3-6e85-4575-b98e-58ef45174398)
 
 ## Imagens da Aplicação (Mobile) 📸
 
 ### Tela de Login
-![Imagem 1](https://github.com/Matheuz233/ProfileLister2/assets/138679799/02608788-0ac5-4f80-945d-1b81e45cbbe2)
+![Login](https://github.com/Matheuz233/ProfileLister2/assets/138679799/02608788-0ac5-4f80-945d-1b81e45cbbe2)
 
 
 ### Tela Inicial
-![Imagem 2](https://github.com/Matheuz233/ProfileLister2/assets/138679799/db0bccd5-6414-4087-a459-a7aa737241a5)
+![Inicio](https://github.com/Matheuz233/ProfileLister2/assets/138679799/db0bccd5-6414-4087-a459-a7aa737241a5)
 
 
 ### Tela do Sobre
-![Imagem 3 ](https://github.com/Matheuz233/ProfileLister2/assets/138679799/b9d8273c-2fae-4003-9536-62cced969fee)
+![Sobre](https://github.com/Matheuz233/ProfileLister2/assets/138679799/b9d8273c-2fae-4003-9536-62cced969fee)
 
 
 ### Tela de Página Não Encontrada
-![Imagem 4](https://github.com/Matheuz233/ProfileLister2/assets/138679799/382ebde8-7205-49c7-bd8c-37b7a16440df)
+![Página 404](https://github.com/Matheuz233/ProfileLister2/assets/138679799/382ebde8-7205-49c7-bd8c-37b7a16440df)
 
 
 ## Instalação 💻
